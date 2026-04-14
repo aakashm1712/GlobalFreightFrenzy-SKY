@@ -1,5 +1,19 @@
 # Global Freight Frenzy
 
+## Cloning the Repository
+
+1. Install Git LFS
+
+```bash
+git lfs install
+```
+
+2. Clone the Repository
+
+```bash
+git clone https://github.com/Meta-Logic-Corp/GlobalFreightFrenzy
+```
+
 ## Leaderboard
 
 ### Register Your Team
