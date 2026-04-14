@@ -59,6 +59,22 @@ git push -u origin feature/my-change
 5. Click **Create pull request**.
 6. Respond to review feedback by pushing additional commits to the same branch.
 
+## Reporting Issues
+
+If you find a bug, simulation inconsistency, or unclear behavior, please open an issue in the main repository:
+
+https://github.com/Meta-Logic-Corp/GlobalFreightFrenzy/issues
+
+When creating an issue, include:
+
+1. A clear title that describes the problem.
+2. Steps to reproduce the issue.
+3. Expected behavior vs. actual behavior.
+4. Relevant logs, error messages, or screenshots.
+5. Environment details (OS, Python version, and command used).
+
+Before opening a new issue, search existing issues to avoid duplicates.
+
 ## Leaderboard
 
 ### Register Your Team
