@@ -1,18 +1,63 @@
 # Global Freight Frenzy
 
-## Cloning the Repository
+## Forking the Repository
 
-1. Install Git LFS
+In order to maintain secrecy among contestants, we will be using GitHub for submissions and enforcing contestants to 'fork' the repository and then 'submit' their work by creating a PR against the main branch.
+
+1. Fork this repository on GitHub
+
+- Go to https://github.com/Meta-Logic-Corp/GlobalFreightFrenzy
+- Click **Fork** in the top-right corner
+- Create the fork under your own GitHub account
+
+2. Install Git LFS
 
 ```bash
 git lfs install
 ```
 
-2. Clone the Repository
+3. Clone your fork
 
 ```bash
-git clone https://github.com/Meta-Logic-Corp/GlobalFreightFrenzy
+git clone https://github.com/<your-username>/GlobalFreightFrenzy.git
+cd GlobalFreightFrenzy
 ```
+
+4. Add the original repo as `upstream`
+
+```bash
+git remote add upstream https://github.com/Meta-Logic-Corp/GlobalFreightFrenzy.git
+git remote -v
+```
+
+5. Create a feature branch
+
+```bash
+git checkout -b feature/my-change
+```
+
+6. Commit and push your changes to your fork
+
+```bash
+git add .
+git commit -m "Describe your change"
+git push -u origin feature/my-change
+```
+
+## Creating a Pull Request
+
+1. Open your fork on GitHub and switch to your branch.
+2. Click **Compare & pull request**.
+3. Set:
+
+- **base repository:** `Meta-Logic-Corp/GlobalFreightFrenzy`
+- **base branch:** `main` (or the target branch requested by maintainers)
+- **head repository:** your fork
+- **compare branch:** `feature/my-change`
+
+4. Add a clear title and description of what changed and why.
+5. Click **Create pull request**.
+6. Respond to review feedback by pushing additional commits to the same branch.
 
 ## Leaderboard
 
