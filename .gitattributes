@@ -1,3 +1,2 @@
 logic-transport-sim filter=lfs diff=lfs merge=lfs -text
-logic-transport-sim-ubuntu-24 filter=lfs diff=lfs merge=lfs -text
 logic-transport-sim-mac filter=lfs diff=lfs merge=lfs -text
