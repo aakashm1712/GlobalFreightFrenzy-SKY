@@ -114,13 +114,23 @@ if sim_state.tick == 0:
 
 ### `sim_state.total_cost → float`
 
-Total accumulated cost so far (vehicle creation + per-km movement + loading + terrain penalties).
+Total accumulated cost so far (vehicle creation + per-km movement + loading + terrain penalties + end-of-simulation undelivered-box penalty).
 
 ---
 
 ### `sim_state.terrain_penalty → float`
 
 The portion of `total_cost` that came from terrain violations (vehicles moving through forbidden terrain).
+
+---
+
+### `sim_state.undelivered_box_penalty → float`
+
+Penalty amount applied at simulation end for boxes that were not delivered.
+
+Formula:
+
+`1000 × (number of undelivered boxes at simulation end)`
 
 ---
 
@@ -324,6 +334,7 @@ for vtype in vehicle_types:
 | Vehicle travels 1 km | `VehicleType.X.value.per_km_cost` |
 | `load_vehicle(...)` with N boxes | N × 1.0 |
 | Vehicle travels 1 km in forbidden terrain | extra `VehicleType.X.value.terrain_penalty_per_km` |
+| End of simulation with U undelivered boxes | U × 1000 |
 
 Lower `total_cost` is better.
 
