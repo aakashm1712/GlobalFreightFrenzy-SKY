@@ -91,6 +91,8 @@ Filename: example_step.py
 
 ## Writing a custom `step` function
 
+All valid methods and properties you can use inside `step(sim_state)` are documented in `API.md`.
+
 ```python
 # my_strategy.py
 from simulator import VehicleType
