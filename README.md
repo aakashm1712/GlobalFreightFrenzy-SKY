@@ -1,5 +1,13 @@
 # Global Freight Frenzy
 
+## Communication
+
+We will be using a Discord server for communication for the event. If you need any help from organizers or want to help one another, please join the link below. 
+
+https://discord.gg/8Y9dqk59
+
+While we fully support students helping one another with issues, please do not share any solutions or files. 
+
 ## Forking the Repository
 
 In order to maintain secrecy among contestants, we will be using GitHub for submissions and enforcing contestants to 'fork' the repository and then 'submit' their work by creating a PR against the main branch.
@@ -85,10 +93,6 @@ https://maketheboard.com/b/sNFzFeMCDIM/self-register
 
 https://maketheboard.com/b/sNFzFeMCDIM
 
-## Example Step Function
-
-Filename: example_step.py
-
 ## Writing a custom `step` function
 
 ```python
@@ -119,7 +123,26 @@ def step(sim_state):
             to_drop = [bid for bid in v["cargo"] if boxes[bid]["destination"] == loc]
             if to_drop:
                 sim_state.unload_vehicle(vid, to_drop)
+
+        # Optional: inspect currently active scenario events
+        active_events = sim_state.get_active_events()
+        for event in active_events:
+          print(event["type"], event["remaining_ticks"])
 ```
+
+`create_vehicle(...)` raises `ValueError` when spawn restrictions are violated:
+
+- `SemiTruck` and `Train` must be within 5 km of a shipping hub.
+- `Airplane` and `Drone` must be within 5 km of an airport.
+- `CargoShip` must be spawned over water (ocean/sea) and within 5 km of an ocean port (when `ocean_ports` are configured).
+
+If no explicit `airports` list is provided in bootstrap JSON, hub locations are
+used as airport spawn points.
+
+Cargo handling facility rules:
+
+- `Airplane` and `Drone` can only load/unload cargo within 5 km of an airport.
+- `CargoShip` can only load/unload cargo within 5 km of an ocean port (when `ocean_ports` are configured).
 
 ---
 
@@ -141,4 +164,20 @@ Run with an external strategy script that exports `step(sim_state)`:
 
 ```bash
 ./logic-transport-sim /absolute/path/to/my_step.py --ui
+```
+
+## Scenario presets
+
+Three ready-to-run scenario files are available in `scenarios/`:
+
+- `scenario_1_us_simple.json`: 50 boxes, no events, 2 US origins to 2 US destinations.
+- `scenario_2_global_heavy.json`: 500 boxes, one event of each type.
+- `scenario_3_event_storm.json`: 1000 boxes, 10 events, many world destinations.
+
+Run any scenario with the built-in strategy:
+
+```bash
+./logic-transport-sim /absolute/path/to/my_step.py --ui --bootstrap scenarios/scenario_1_us_simple.json
+./logic-transport-sim /absolute/path/to/my_step.py --ui --bootstrap scenarios/scenario_2_global_heavy.json
+./logic-transport-sim  /absolute/path/to/my_step.py --ui --bootstrap scenarios/scenario_3_event_storm.json
 ```

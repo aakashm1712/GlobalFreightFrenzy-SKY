@@ -1,0 +1,706 @@
+{
+  "simulation_config": {
+    "time_per_tick_hours": 1.0
+  },
+  "events": [],
+  "airports": [
+    {
+      "id": "airport_lax",
+      "name": "Los Angeles International Airport",
+      "location": {
+        "lat": 33.9425,
+        "lon": -118.4081
+      }
+    },
+    {
+      "id": "airport_jfk",
+      "name": "John F. Kennedy International Airport",
+      "location": {
+        "lat": 40.6413,
+        "lon": -73.7781
+      }
+    },
+    {
+      "id": "airport_ord",
+      "name": "O'Hare International Airport",
+      "location": {
+        "lat": 41.9742,
+        "lon": -87.9073
+      }
+    },
+    {
+      "id": "airport_dfw",
+      "name": "Dallas/Fort Worth International Airport",
+      "location": {
+        "lat": 32.8998,
+        "lon": -97.0403
+      }
+    },
+    {
+      "id": "airport_mia",
+      "name": "Miami International Airport",
+      "location": {
+        "lat": 25.7959,
+        "lon": -80.287
+      }
+    },
+    {
+      "id": "airport_sea",
+      "name": "Seattle-Tacoma International Airport",
+      "location": {
+        "lat": 47.4502,
+        "lon": -122.3088
+      }
+    },
+    {
+      "id": "airport_lhr",
+      "name": "Heathrow Airport",
+      "location": {
+        "lat": 51.47,
+        "lon": -0.4543
+      }
+    },
+    {
+      "id": "airport_fra",
+      "name": "Frankfurt Airport",
+      "location": {
+        "lat": 50.0379,
+        "lon": 8.5622
+      }
+    },
+    {
+      "id": "airport_dxb",
+      "name": "Dubai International Airport",
+      "location": {
+        "lat": 25.2532,
+        "lon": 55.3657
+      }
+    },
+    {
+      "id": "airport_bom",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "location": {
+        "lat": 19.0896,
+        "lon": 72.8656
+      }
+    },
+    {
+      "id": "airport_sin",
+      "name": "Singapore Changi Airport",
+      "location": {
+        "lat": 1.3644,
+        "lon": 103.9915
+      }
+    },
+    {
+      "id": "airport_hnd",
+      "name": "Haneda Airport",
+      "location": {
+        "lat": 35.5494,
+        "lon": 139.7798
+      }
+    },
+    {
+      "id": "airport_syd",
+      "name": "Sydney Kingsford Smith Airport",
+      "location": {
+        "lat": -33.9399,
+        "lon": 151.1753
+      }
+    },
+    {
+      "id": "airport_gru",
+      "name": "Sao Paulo/Guarulhos International Airport",
+      "location": {
+        "lat": -23.4356,
+        "lon": -46.4731
+      }
+    },
+    {
+      "id": "airport_jnb",
+      "name": "O.R. Tambo International Airport",
+      "location": {
+        "lat": -26.1337,
+        "lon": 28.242
+      }
+    },
+    {
+      "id": "airport_nbo",
+      "name": "Jomo Kenyatta International Airport",
+      "location": {
+        "lat": -1.3192,
+        "lon": 36.9278
+      }
+    },
+    {
+      "id": "airport_yyz",
+      "name": "Toronto Pearson International Airport",
+      "location": {
+        "lat": 43.6777,
+        "lon": -79.6248
+      }
+    },
+    {
+      "id": "airport_mex",
+      "name": "Mexico City International Airport",
+      "location": {
+        "lat": 19.4361,
+        "lon": -99.0719
+      }
+    }
+  ],
+  "ocean_ports": [
+    {
+      "id": "port_la",
+      "name": "Port of Los Angeles",
+      "location": {
+        "lat": 33.7361,
+        "lon": -118.2639
+      }
+    },
+    {
+      "id": "port_nynj",
+      "name": "Port of New York and New Jersey",
+      "location": {
+        "lat": 40.6681,
+        "lon": -74.0455
+      }
+    },
+    {
+      "id": "port_chicago",
+      "name": "Port of Chicago",
+      "location": {
+        "lat": 41.88,
+        "lon": -87.62
+      }
+    },
+    {
+      "id": "port_miami",
+      "name": "PortMiami",
+      "location": {
+        "lat": 25.7781,
+        "lon": -80.1794
+      }
+    },
+    {
+      "id": "port_seattle",
+      "name": "Port of Seattle",
+      "location": {
+        "lat": 47.6026,
+        "lon": -122.3382
+      }
+    },
+    {
+      "id": "port_london",
+      "name": "Port of London",
+      "location": {
+        "lat": 51.5074,
+        "lon": -0.0174
+      }
+    },
+    {
+      "id": "port_hamburg",
+      "name": "Port of Hamburg",
+      "location": {
+        "lat": 53.5461,
+        "lon": 9.9661
+      }
+    },
+    {
+      "id": "port_jebel_ali",
+      "name": "Jebel Ali Port",
+      "location": {
+        "lat": 25.0108,
+        "lon": 55.0617
+      }
+    },
+    {
+      "id": "port_nhava_sheva",
+      "name": "Jawaharlal Nehru Port",
+      "location": {
+        "lat": 18.9498,
+        "lon": 72.9483
+      }
+    },
+    {
+      "id": "port_singapore",
+      "name": "Port of Singapore",
+      "location": {
+        "lat": 1.2644,
+        "lon": 103.82
+      }
+    },
+    {
+      "id": "port_tokyo",
+      "name": "Port of Tokyo",
+      "location": {
+        "lat": 35.6296,
+        "lon": 139.7773
+      }
+    },
+    {
+      "id": "port_sydney",
+      "name": "Port Botany",
+      "location": {
+        "lat": -33.9656,
+        "lon": 151.201
+      }
+    },
+    {
+      "id": "port_santos",
+      "name": "Port of Santos",
+      "location": {
+        "lat": -23.9608,
+        "lon": -46.3288
+      }
+    },
+    {
+      "id": "port_durban",
+      "name": "Port of Durban",
+      "location": {
+        "lat": -29.8713,
+        "lon": 31.0262
+      }
+    },
+    {
+      "id": "port_mombasa",
+      "name": "Port of Mombasa",
+      "location": {
+        "lat": -4.0435,
+        "lon": 39.6682
+      }
+    },
+    {
+      "id": "port_toronto",
+      "name": "Port of Toronto",
+      "location": {
+        "lat": 43.6407,
+        "lon": -79.359
+      }
+    },
+    {
+      "id": "port_veracruz",
+      "name": "Port of Veracruz",
+      "location": {
+        "lat": 19.201,
+        "lon": -96.1342
+      }
+    }
+  ],
+  "shipping_hubs": [
+    {
+      "id": "hub_la",
+      "name": "Los Angeles Distribution Center",
+      "location": {
+        "lat": 33.9425,
+        "lon": -118.4081
+      },
+      "boxes": [
+        {
+          "id": "s1_box_001",
+          "contents": "Timber Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_003",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_005",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_007",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_009",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_011",
+          "contents": "Toys",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_013",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_015",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_017",
+          "contents": "Furniture",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_019",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_021",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_023",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_025",
+          "contents": "Textiles",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_027",
+          "contents": "Clothing",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_029",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_031",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_033",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_035",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_037",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_039",
+          "contents": "Furniture",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_041",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_043",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_045",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_047",
+          "contents": "Electronics",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_049",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        }
+      ]
+    },
+    {
+      "id": "hub_nyc",
+      "name": "New York Distribution Center",
+      "location": {
+        "lat": 40.6413,
+        "lon": -73.7781
+      },
+      "boxes": [
+        {
+          "id": "s1_box_002",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_004",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_006",
+          "contents": "Books",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_008",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_010",
+          "contents": "Clothing",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_012",
+          "contents": "Textiles",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_014",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_016",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_018",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_020",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_022",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_024",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_026",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_028",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_030",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_032",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_034",
+          "contents": "Toys",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_036",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_038",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_040",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_042",
+          "contents": "Clothing",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_044",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_046",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s1_box_048",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s1_box_050",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_chicago"
+        }
+      ]
+    },
+    {
+      "id": "hub_chicago",
+      "name": "Chicago Distribution Center",
+      "location": {
+        "lat": 41.9742,
+        "lon": -87.9073
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_dallas",
+      "name": "Dallas Distribution Center",
+      "location": {
+        "lat": 32.8481,
+        "lon": -97.0403
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_miami",
+      "name": "Miami Distribution Center",
+      "location": {
+        "lat": 25.7959,
+        "lon": -80.287
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_seattle",
+      "name": "Seattle Distribution Center",
+      "location": {
+        "lat": 47.4502,
+        "lon": -122.3088
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_london",
+      "name": "London Hub",
+      "location": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_frankfurt",
+      "name": "Frankfurt Distribution Center",
+      "location": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_dubai",
+      "name": "Dubai Hub",
+      "location": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_mumbai",
+      "name": "Mumbai Distribution Center",
+      "location": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_singapore",
+      "name": "Singapore Hub",
+      "location": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_tokyo",
+      "name": "Tokyo Distribution Center",
+      "location": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_sydney",
+      "name": "Sydney Hub",
+      "location": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_sao_paulo",
+      "name": "S\u00e3o Paulo Distribution Center",
+      "location": {
+        "lat": -23.5505,
+        "lon": -46.6333
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_johannesburg",
+      "name": "Johannesburg Hub",
+      "location": {
+        "lat": -26.2041,
+        "lon": 28.0473
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_nairobi",
+      "name": "Nairobi Distribution Center",
+      "location": {
+        "lat": -1.2921,
+        "lon": 36.8219
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_toronto",
+      "name": "Toronto Hub",
+      "location": {
+        "lat": 43.651,
+        "lon": -79.347
+      },
+      "boxes": []
+    },
+    {
+      "id": "hub_mexico_city",
+      "name": "Mexico City Distribution Center",
+      "location": {
+        "lat": 19.4326,
+        "lon": -99.1332
+      },
+      "boxes": []
+    }
+  ]
+}

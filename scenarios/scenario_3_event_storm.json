@@ -1,0 +1,5558 @@
+{
+  "simulation_config": {
+    "time_per_tick_hours": 1.0
+  },
+  "events": [
+    {
+      "type": "ground_stop_flights",
+      "start_tick": 3,
+      "duration_hours": 1.0
+    },
+    {
+      "type": "traffic",
+      "start_tick": 5,
+      "duration_hours": 2.0,
+      "center": {
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "radius_m": 90000
+    },
+    {
+      "type": "oceanic_weather",
+      "start_tick": 7,
+      "duration_hours": 2.0,
+      "center": {
+        "lat": 36.0,
+        "lon": -140.0
+      },
+      "radius_m": 600000
+    },
+    {
+      "type": "ground_stop_flights",
+      "start_tick": 10,
+      "duration_hours": 1.5
+    },
+    {
+      "type": "traffic",
+      "start_tick": 12,
+      "duration_hours": 2.5,
+      "center": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "radius_m": 120000
+    },
+    {
+      "type": "oceanic_weather",
+      "start_tick": 15,
+      "duration_hours": 3.0,
+      "center": {
+        "lat": 1.2,
+        "lon": 103.8
+      },
+      "radius_m": 450000
+    },
+    {
+      "type": "traffic",
+      "start_tick": 19,
+      "duration_hours": 1.0,
+      "center": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "radius_m": 80000
+    },
+    {
+      "type": "ground_stop_flights",
+      "start_tick": 22,
+      "duration_hours": 2.0
+    },
+    {
+      "type": "oceanic_weather",
+      "start_tick": 25,
+      "duration_hours": 2.0,
+      "center": {
+        "lat": -23.55,
+        "lon": -46.63
+      },
+      "radius_m": 500000
+    },
+    {
+      "type": "traffic",
+      "start_tick": 29,
+      "duration_hours": 2.0,
+      "center": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "radius_m": 100000
+    }
+  ],
+  "airports": [
+    {
+      "id": "airport_lax",
+      "name": "Los Angeles International Airport",
+      "location": {
+        "lat": 33.9425,
+        "lon": -118.4081
+      }
+    },
+    {
+      "id": "airport_jfk",
+      "name": "John F. Kennedy International Airport",
+      "location": {
+        "lat": 40.6413,
+        "lon": -73.7781
+      }
+    },
+    {
+      "id": "airport_ord",
+      "name": "O'Hare International Airport",
+      "location": {
+        "lat": 41.9742,
+        "lon": -87.9073
+      }
+    },
+    {
+      "id": "airport_dfw",
+      "name": "Dallas/Fort Worth International Airport",
+      "location": {
+        "lat": 32.8998,
+        "lon": -97.0403
+      }
+    },
+    {
+      "id": "airport_mia",
+      "name": "Miami International Airport",
+      "location": {
+        "lat": 25.7959,
+        "lon": -80.287
+      }
+    },
+    {
+      "id": "airport_sea",
+      "name": "Seattle-Tacoma International Airport",
+      "location": {
+        "lat": 47.4502,
+        "lon": -122.3088
+      }
+    },
+    {
+      "id": "airport_lhr",
+      "name": "Heathrow Airport",
+      "location": {
+        "lat": 51.47,
+        "lon": -0.4543
+      }
+    },
+    {
+      "id": "airport_fra",
+      "name": "Frankfurt Airport",
+      "location": {
+        "lat": 50.0379,
+        "lon": 8.5622
+      }
+    },
+    {
+      "id": "airport_dxb",
+      "name": "Dubai International Airport",
+      "location": {
+        "lat": 25.2532,
+        "lon": 55.3657
+      }
+    },
+    {
+      "id": "airport_bom",
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "location": {
+        "lat": 19.0896,
+        "lon": 72.8656
+      }
+    },
+    {
+      "id": "airport_sin",
+      "name": "Singapore Changi Airport",
+      "location": {
+        "lat": 1.3644,
+        "lon": 103.9915
+      }
+    },
+    {
+      "id": "airport_hnd",
+      "name": "Haneda Airport",
+      "location": {
+        "lat": 35.5494,
+        "lon": 139.7798
+      }
+    },
+    {
+      "id": "airport_syd",
+      "name": "Sydney Kingsford Smith Airport",
+      "location": {
+        "lat": -33.9399,
+        "lon": 151.1753
+      }
+    },
+    {
+      "id": "airport_gru",
+      "name": "Sao Paulo/Guarulhos International Airport",
+      "location": {
+        "lat": -23.4356,
+        "lon": -46.4731
+      }
+    },
+    {
+      "id": "airport_jnb",
+      "name": "O.R. Tambo International Airport",
+      "location": {
+        "lat": -26.1337,
+        "lon": 28.242
+      }
+    },
+    {
+      "id": "airport_nbo",
+      "name": "Jomo Kenyatta International Airport",
+      "location": {
+        "lat": -1.3192,
+        "lon": 36.9278
+      }
+    },
+    {
+      "id": "airport_yyz",
+      "name": "Toronto Pearson International Airport",
+      "location": {
+        "lat": 43.6777,
+        "lon": -79.6248
+      }
+    },
+    {
+      "id": "airport_mex",
+      "name": "Mexico City International Airport",
+      "location": {
+        "lat": 19.4361,
+        "lon": -99.0719
+      }
+    }
+  ],
+  "ocean_ports": [
+    {
+      "id": "port_la",
+      "name": "Port of Los Angeles",
+      "location": {
+        "lat": 33.7361,
+        "lon": -118.2639
+      }
+    },
+    {
+      "id": "port_nynj",
+      "name": "Port of New York and New Jersey",
+      "location": {
+        "lat": 40.6681,
+        "lon": -74.0455
+      }
+    },
+    {
+      "id": "port_chicago",
+      "name": "Port of Chicago",
+      "location": {
+        "lat": 41.88,
+        "lon": -87.62
+      }
+    },
+    {
+      "id": "port_miami",
+      "name": "PortMiami",
+      "location": {
+        "lat": 25.7781,
+        "lon": -80.1794
+      }
+    },
+    {
+      "id": "port_seattle",
+      "name": "Port of Seattle",
+      "location": {
+        "lat": 47.6026,
+        "lon": -122.3382
+      }
+    },
+    {
+      "id": "port_london",
+      "name": "Port of London",
+      "location": {
+        "lat": 51.5074,
+        "lon": -0.0174
+      }
+    },
+    {
+      "id": "port_hamburg",
+      "name": "Port of Hamburg",
+      "location": {
+        "lat": 53.5461,
+        "lon": 9.9661
+      }
+    },
+    {
+      "id": "port_jebel_ali",
+      "name": "Jebel Ali Port",
+      "location": {
+        "lat": 25.0108,
+        "lon": 55.0617
+      }
+    },
+    {
+      "id": "port_nhava_sheva",
+      "name": "Jawaharlal Nehru Port",
+      "location": {
+        "lat": 18.9498,
+        "lon": 72.9483
+      }
+    },
+    {
+      "id": "port_singapore",
+      "name": "Port of Singapore",
+      "location": {
+        "lat": 1.2644,
+        "lon": 103.82
+      }
+    },
+    {
+      "id": "port_tokyo",
+      "name": "Port of Tokyo",
+      "location": {
+        "lat": 35.6296,
+        "lon": 139.7773
+      }
+    },
+    {
+      "id": "port_sydney",
+      "name": "Port Botany",
+      "location": {
+        "lat": -33.9656,
+        "lon": 151.201
+      }
+    },
+    {
+      "id": "port_santos",
+      "name": "Port of Santos",
+      "location": {
+        "lat": -23.9608,
+        "lon": -46.3288
+      }
+    },
+    {
+      "id": "port_durban",
+      "name": "Port of Durban",
+      "location": {
+        "lat": -29.8713,
+        "lon": 31.0262
+      }
+    },
+    {
+      "id": "port_mombasa",
+      "name": "Port of Mombasa",
+      "location": {
+        "lat": -4.0435,
+        "lon": 39.6682
+      }
+    },
+    {
+      "id": "port_toronto",
+      "name": "Port of Toronto",
+      "location": {
+        "lat": 43.6407,
+        "lon": -79.359
+      }
+    },
+    {
+      "id": "port_veracruz",
+      "name": "Port of Veracruz",
+      "location": {
+        "lat": 19.201,
+        "lon": -96.1342
+      }
+    }
+  ],
+  "shipping_hubs": [
+    {
+      "id": "hub_la",
+      "name": "Los Angeles Distribution Center",
+      "location": {
+        "lat": 33.9425,
+        "lon": -118.4081
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0001",
+          "contents": "Clothing",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0019",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0037",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0055",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0073",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0091",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0109",
+          "contents": "Clothing",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0127",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0145",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0163",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0181",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0199",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0217",
+          "contents": "Toys",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0235",
+          "contents": "Textiles",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0253",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0271",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0289",
+          "contents": "Books",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0307",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0325",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0343",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0361",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0379",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0397",
+          "contents": "Machinery",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0415",
+          "contents": "Toys",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0433",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0451",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0469",
+          "contents": "Machinery",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0487",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0505",
+          "contents": "Electronics",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0523",
+          "contents": "Electronics",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0541",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0559",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0577",
+          "contents": "Electronics",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0595",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0613",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0631",
+          "contents": "Machinery",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0649",
+          "contents": "Food Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0667",
+          "contents": "Electronics",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0685",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0703",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0721",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0739",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0757",
+          "contents": "Textiles",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0775",
+          "contents": "Clothing",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0793",
+          "contents": "Books",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0811",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0829",
+          "contents": "Toys",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0847",
+          "contents": "Timber Products",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0865",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0883",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0901",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0919",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0937",
+          "contents": "Toys",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0955",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0973",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dallas"
+        },
+        {
+          "id": "s3_box_0991",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dallas"
+        }
+      ]
+    },
+    {
+      "id": "hub_nyc",
+      "name": "New York Distribution Center",
+      "location": {
+        "lat": 40.6413,
+        "lon": -73.7781
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0002",
+          "contents": "Toys",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0020",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0038",
+          "contents": "Food Products",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0056",
+          "contents": "Toys",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0074",
+          "contents": "Electronics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0092",
+          "contents": "Electronics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0110",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0128",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0146",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0164",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0182",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0200",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0218",
+          "contents": "Clothing",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0236",
+          "contents": "Textiles",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0254",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0272",
+          "contents": "Machinery",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0290",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0308",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0326",
+          "contents": "Electronics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0344",
+          "contents": "Electronics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0362",
+          "contents": "Food Products",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0380",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0398",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0416",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0434",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0452",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0470",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0488",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0506",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0524",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0542",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0560",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0578",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0596",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0614",
+          "contents": "Clothing",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0632",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0650",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0668",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0686",
+          "contents": "Food Products",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0704",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0722",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0740",
+          "contents": "Books",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0758",
+          "contents": "Books",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0776",
+          "contents": "Machinery",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0794",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0812",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0830",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0848",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0866",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0884",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0902",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0920",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0938",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0956",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0974",
+          "contents": "Toys",
+          "destination_hub": "hub_singapore"
+        },
+        {
+          "id": "s3_box_0992",
+          "contents": "Machinery",
+          "destination_hub": "hub_singapore"
+        }
+      ]
+    },
+    {
+      "id": "hub_chicago",
+      "name": "Chicago Distribution Center",
+      "location": {
+        "lat": 41.9742,
+        "lon": -87.9073
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0003",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0021",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0039",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0057",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0075",
+          "contents": "Machinery",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0093",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0111",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0129",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0147",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0165",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0183",
+          "contents": "Clothing",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0201",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0219",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0237",
+          "contents": "Machinery",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0255",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0273",
+          "contents": "Timber Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0291",
+          "contents": "Furniture",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0309",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0327",
+          "contents": "Textiles",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0345",
+          "contents": "Timber Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0363",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0381",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0399",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0417",
+          "contents": "Electronics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0435",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0453",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0471",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0489",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0507",
+          "contents": "Food Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0525",
+          "contents": "Food Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0543",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0561",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0579",
+          "contents": "Textiles",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0597",
+          "contents": "Timber Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0615",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0633",
+          "contents": "Food Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0651",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0669",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0687",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0705",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0723",
+          "contents": "Machinery",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0741",
+          "contents": "Timber Products",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0759",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0777",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0795",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0813",
+          "contents": "Electronics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0831",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0849",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0867",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0885",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0903",
+          "contents": "Toys",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0921",
+          "contents": "Electronics",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0939",
+          "contents": "Toys",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0957",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0975",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mexico_city"
+        },
+        {
+          "id": "s3_box_0993",
+          "contents": "Books",
+          "destination_hub": "hub_mexico_city"
+        }
+      ]
+    },
+    {
+      "id": "hub_dallas",
+      "name": "Dallas Distribution Center",
+      "location": {
+        "lat": 32.8481,
+        "lon": -97.0403
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0004",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0022",
+          "contents": "Machinery",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0040",
+          "contents": "Machinery",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0058",
+          "contents": "Machinery",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0076",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0094",
+          "contents": "Furniture",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0112",
+          "contents": "Machinery",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0130",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0148",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0166",
+          "contents": "Textiles",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0184",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0202",
+          "contents": "Furniture",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0220",
+          "contents": "Furniture",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0238",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0256",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0274",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0292",
+          "contents": "Textiles",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0310",
+          "contents": "Timber Products",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0328",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0346",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0364",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0382",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0400",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0418",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0436",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0454",
+          "contents": "Food Products",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0472",
+          "contents": "Machinery",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0490",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0508",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0526",
+          "contents": "Machinery",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0544",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0562",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0580",
+          "contents": "Timber Products",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0598",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0616",
+          "contents": "Food Products",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0634",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0652",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0670",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0688",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0706",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0724",
+          "contents": "Toys",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0742",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0760",
+          "contents": "Textiles",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0778",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0796",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0814",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0832",
+          "contents": "Toys",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0850",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0868",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0886",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0904",
+          "contents": "Textiles",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0922",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0940",
+          "contents": "Clothing",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0958",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0976",
+          "contents": "Books",
+          "destination_hub": "hub_london"
+        },
+        {
+          "id": "s3_box_0994",
+          "contents": "Food Products",
+          "destination_hub": "hub_london"
+        }
+      ]
+    },
+    {
+      "id": "hub_miami",
+      "name": "Miami Distribution Center",
+      "location": {
+        "lat": 25.7959,
+        "lon": -80.287
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0005",
+          "contents": "Electronics",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0023",
+          "contents": "Machinery",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0041",
+          "contents": "Textiles",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0059",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0077",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0095",
+          "contents": "Clothing",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0113",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0131",
+          "contents": "Textiles",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0149",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0167",
+          "contents": "Textiles",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0185",
+          "contents": "Clothing",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0203",
+          "contents": "Books",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0221",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0239",
+          "contents": "Machinery",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0257",
+          "contents": "Food Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0275",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0293",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0311",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0329",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0347",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0365",
+          "contents": "Machinery",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0383",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0401",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0419",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0437",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0455",
+          "contents": "Furniture",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0473",
+          "contents": "Furniture",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0491",
+          "contents": "Clothing",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0509",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0527",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0545",
+          "contents": "Toys",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0563",
+          "contents": "Food Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0581",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0599",
+          "contents": "Toys",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0617",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0635",
+          "contents": "Toys",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0653",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0671",
+          "contents": "Clothing",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0689",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0707",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0725",
+          "contents": "Machinery",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0743",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0761",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0779",
+          "contents": "Furniture",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0797",
+          "contents": "Electronics",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0815",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0833",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0851",
+          "contents": "Machinery",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0869",
+          "contents": "Machinery",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0887",
+          "contents": "Books",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0905",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0923",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0941",
+          "contents": "Toys",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0959",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0977",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_sao_paulo"
+        },
+        {
+          "id": "s3_box_0995",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sao_paulo"
+        }
+      ]
+    },
+    {
+      "id": "hub_seattle",
+      "name": "Seattle Distribution Center",
+      "location": {
+        "lat": 47.4502,
+        "lon": -122.3088
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0006",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0024",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0042",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0060",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0078",
+          "contents": "Books",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0096",
+          "contents": "Furniture",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0114",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0132",
+          "contents": "Electronics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0150",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0168",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0186",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0204",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0222",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0240",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0258",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0276",
+          "contents": "Timber Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0294",
+          "contents": "Timber Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0312",
+          "contents": "Textiles",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0330",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0348",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0366",
+          "contents": "Electronics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0384",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0402",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0420",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0438",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0456",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0474",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0492",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0510",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0528",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0546",
+          "contents": "Clothing",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0564",
+          "contents": "Books",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0582",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0600",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0618",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0636",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0654",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0672",
+          "contents": "Books",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0690",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0708",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0726",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0744",
+          "contents": "Books",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0762",
+          "contents": "Textiles",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0780",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0798",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0816",
+          "contents": "Machinery",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0834",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0852",
+          "contents": "Textiles",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0870",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0888",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0906",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0924",
+          "contents": "Food Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0942",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0960",
+          "contents": "Timber Products",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0978",
+          "contents": "Electronics",
+          "destination_hub": "hub_chicago"
+        },
+        {
+          "id": "s3_box_0996",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_chicago"
+        }
+      ]
+    },
+    {
+      "id": "hub_london",
+      "name": "London Hub",
+      "location": {
+        "lat": 51.5074,
+        "lon": -0.1278
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0007",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0025",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0043",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0061",
+          "contents": "Textiles",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0079",
+          "contents": "Books",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0097",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0115",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0133",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0151",
+          "contents": "Books",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0169",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0187",
+          "contents": "Books",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0205",
+          "contents": "Food Products",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0223",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0241",
+          "contents": "Furniture",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0259",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0277",
+          "contents": "Books",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0295",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0313",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0331",
+          "contents": "Clothing",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0349",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0367",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0385",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0403",
+          "contents": "Toys",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0421",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0439",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0457",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0475",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0493",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0511",
+          "contents": "Textiles",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0529",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0547",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0565",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0583",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0601",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0619",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0637",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0655",
+          "contents": "Furniture",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0673",
+          "contents": "Clothing",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0691",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0709",
+          "contents": "Toys",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0727",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0745",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0763",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0781",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0799",
+          "contents": "Clothing",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0817",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0835",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0853",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0871",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0889",
+          "contents": "Furniture",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0907",
+          "contents": "Textiles",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0925",
+          "contents": "Toys",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0943",
+          "contents": "Textiles",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0961",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0979",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mumbai"
+        },
+        {
+          "id": "s3_box_0997",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_mumbai"
+        }
+      ]
+    },
+    {
+      "id": "hub_frankfurt",
+      "name": "Frankfurt Distribution Center",
+      "location": {
+        "lat": 50.1109,
+        "lon": 8.6821
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0008",
+          "contents": "Machinery",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0026",
+          "contents": "Clothing",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0044",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0062",
+          "contents": "Clothing",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0080",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0098",
+          "contents": "Clothing",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0116",
+          "contents": "Electronics",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0134",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0152",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0170",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0188",
+          "contents": "Toys",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0206",
+          "contents": "Furniture",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0224",
+          "contents": "Furniture",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0242",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0260",
+          "contents": "Machinery",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0278",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0296",
+          "contents": "Toys",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0314",
+          "contents": "Furniture",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0332",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0350",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0368",
+          "contents": "Books",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0386",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0404",
+          "contents": "Books",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0422",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0440",
+          "contents": "Toys",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0458",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0476",
+          "contents": "Books",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0494",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0512",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0530",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0548",
+          "contents": "Toys",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0566",
+          "contents": "Electronics",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0584",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0602",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0620",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0638",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0656",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0674",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0692",
+          "contents": "Textiles",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0710",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0728",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0746",
+          "contents": "Furniture",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0764",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0782",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0800",
+          "contents": "Timber Products",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0818",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0836",
+          "contents": "Food Products",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0854",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0872",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0890",
+          "contents": "Electronics",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0908",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0926",
+          "contents": "Machinery",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0944",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0962",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0980",
+          "contents": "Books",
+          "destination_hub": "hub_toronto"
+        },
+        {
+          "id": "s3_box_0998",
+          "contents": "Books",
+          "destination_hub": "hub_toronto"
+        }
+      ]
+    },
+    {
+      "id": "hub_dubai",
+      "name": "Dubai Hub",
+      "location": {
+        "lat": 25.2048,
+        "lon": 55.2708
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0009",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0027",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0045",
+          "contents": "Books",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0063",
+          "contents": "Furniture",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0081",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0099",
+          "contents": "Electronics",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0117",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0135",
+          "contents": "Machinery",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0153",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0171",
+          "contents": "Textiles",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0189",
+          "contents": "Machinery",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0207",
+          "contents": "Books",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0225",
+          "contents": "Electronics",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0243",
+          "contents": "Clothing",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0261",
+          "contents": "Clothing",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0279",
+          "contents": "Electronics",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0297",
+          "contents": "Food Products",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0315",
+          "contents": "Books",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0333",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0351",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0369",
+          "contents": "Food Products",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0387",
+          "contents": "Furniture",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0405",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0423",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0441",
+          "contents": "Textiles",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0459",
+          "contents": "Machinery",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0477",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0495",
+          "contents": "Furniture",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0513",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0531",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0549",
+          "contents": "Food Products",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0567",
+          "contents": "Toys",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0585",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0603",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0621",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0639",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0657",
+          "contents": "Food Products",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0675",
+          "contents": "Clothing",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0693",
+          "contents": "Machinery",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0711",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0729",
+          "contents": "Electronics",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0747",
+          "contents": "Textiles",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0765",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0783",
+          "contents": "Clothing",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0801",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0819",
+          "contents": "Furniture",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0837",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0855",
+          "contents": "Food Products",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0873",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0891",
+          "contents": "Books",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0909",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0927",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0945",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0963",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0981",
+          "contents": "Toys",
+          "destination_hub": "hub_seattle"
+        },
+        {
+          "id": "s3_box_0999",
+          "contents": "Textiles",
+          "destination_hub": "hub_seattle"
+        }
+      ]
+    },
+    {
+      "id": "hub_mumbai",
+      "name": "Mumbai Distribution Center",
+      "location": {
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0010",
+          "contents": "Toys",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0028",
+          "contents": "Furniture",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0046",
+          "contents": "Food Products",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0064",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0082",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0100",
+          "contents": "Books",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0118",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0136",
+          "contents": "Textiles",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0154",
+          "contents": "Textiles",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0172",
+          "contents": "Textiles",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0190",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0208",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0226",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0244",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0262",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0280",
+          "contents": "Furniture",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0298",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0316",
+          "contents": "Textiles",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0334",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0352",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0370",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0388",
+          "contents": "Machinery",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0406",
+          "contents": "Electronics",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0424",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0442",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0460",
+          "contents": "Toys",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0478",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0496",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0514",
+          "contents": "Timber Products",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0532",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0550",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0568",
+          "contents": "Furniture",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0586",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0604",
+          "contents": "Books",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0622",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0640",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0658",
+          "contents": "Food Products",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0676",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0694",
+          "contents": "Clothing",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0712",
+          "contents": "Food Products",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0730",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0748",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0766",
+          "contents": "Toys",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0784",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0802",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0820",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0838",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0856",
+          "contents": "Electronics",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0874",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0892",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0910",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0928",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0946",
+          "contents": "Electronics",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0964",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_0982",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_sydney"
+        },
+        {
+          "id": "s3_box_1000",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_sydney"
+        }
+      ]
+    },
+    {
+      "id": "hub_singapore",
+      "name": "Singapore Hub",
+      "location": {
+        "lat": 1.3521,
+        "lon": 103.8198
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0011",
+          "contents": "Toys",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0029",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0047",
+          "contents": "Books",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0065",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0083",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0101",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0119",
+          "contents": "Food Products",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0137",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0155",
+          "contents": "Toys",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0173",
+          "contents": "Textiles",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0191",
+          "contents": "Food Products",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0209",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0227",
+          "contents": "Furniture",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0245",
+          "contents": "Timber Products",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0263",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0281",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0299",
+          "contents": "Food Products",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0317",
+          "contents": "Clothing",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0335",
+          "contents": "Furniture",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0353",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0371",
+          "contents": "Electronics",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0389",
+          "contents": "Furniture",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0407",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0425",
+          "contents": "Machinery",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0443",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0461",
+          "contents": "Books",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0479",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0497",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0515",
+          "contents": "Furniture",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0533",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0551",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0569",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0587",
+          "contents": "Food Products",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0605",
+          "contents": "Food Products",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0623",
+          "contents": "Clothing",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0641",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0659",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0677",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0695",
+          "contents": "Textiles",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0713",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0731",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0749",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0767",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0785",
+          "contents": "Electronics",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0803",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0821",
+          "contents": "Furniture",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0839",
+          "contents": "Textiles",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0857",
+          "contents": "Furniture",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0875",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0893",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0911",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0929",
+          "contents": "Clothing",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0947",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0965",
+          "contents": "Machinery",
+          "destination_hub": "hub_nyc"
+        },
+        {
+          "id": "s3_box_0983",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nyc"
+        }
+      ]
+    },
+    {
+      "id": "hub_tokyo",
+      "name": "Tokyo Distribution Center",
+      "location": {
+        "lat": 35.6762,
+        "lon": 139.6503
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0012",
+          "contents": "Toys",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0030",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0048",
+          "contents": "Books",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0066",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0084",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0102",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0120",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0138",
+          "contents": "Electronics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0156",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0174",
+          "contents": "Electronics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0192",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0210",
+          "contents": "Food Products",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0228",
+          "contents": "Food Products",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0246",
+          "contents": "Timber Products",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0264",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0282",
+          "contents": "Clothing",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0300",
+          "contents": "Electronics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0318",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0336",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0354",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0372",
+          "contents": "Electronics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0390",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0408",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0426",
+          "contents": "Clothing",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0444",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0462",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0480",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0498",
+          "contents": "Textiles",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0516",
+          "contents": "Machinery",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0534",
+          "contents": "Food Products",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0552",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0570",
+          "contents": "Furniture",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0588",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0606",
+          "contents": "Textiles",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0624",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0642",
+          "contents": "Toys",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0660",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0678",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0696",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0714",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0732",
+          "contents": "Toys",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0750",
+          "contents": "Electronics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0768",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0786",
+          "contents": "Toys",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0804",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0822",
+          "contents": "Timber Products",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0840",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0858",
+          "contents": "Textiles",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0876",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0894",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0912",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0930",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0948",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0966",
+          "contents": "Textiles",
+          "destination_hub": "hub_dubai"
+        },
+        {
+          "id": "s3_box_0984",
+          "contents": "Food Products",
+          "destination_hub": "hub_dubai"
+        }
+      ]
+    },
+    {
+      "id": "hub_sydney",
+      "name": "Sydney Hub",
+      "location": {
+        "lat": -33.8688,
+        "lon": 151.2093
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0013",
+          "contents": "Toys",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0031",
+          "contents": "Machinery",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0049",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0067",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0085",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0103",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0121",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0139",
+          "contents": "Furniture",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0157",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0175",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0193",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0211",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0229",
+          "contents": "Electronics",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0247",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0265",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0283",
+          "contents": "Machinery",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0301",
+          "contents": "Books",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0319",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0337",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0355",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0373",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0391",
+          "contents": "Textiles",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0409",
+          "contents": "Timber Products",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0427",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0445",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0463",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0481",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0499",
+          "contents": "Timber Products",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0517",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0535",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0553",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0571",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0589",
+          "contents": "Machinery",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0607",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0625",
+          "contents": "Food Products",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0643",
+          "contents": "Timber Products",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0661",
+          "contents": "Books",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0679",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0697",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0715",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0733",
+          "contents": "Machinery",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0751",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0769",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0787",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0805",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0823",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0841",
+          "contents": "Timber Products",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0859",
+          "contents": "Electronics",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0877",
+          "contents": "Timber Products",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0895",
+          "contents": "Machinery",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0913",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0931",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0949",
+          "contents": "Toys",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0967",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_nairobi"
+        },
+        {
+          "id": "s3_box_0985",
+          "contents": "Clothing",
+          "destination_hub": "hub_nairobi"
+        }
+      ]
+    },
+    {
+      "id": "hub_sao_paulo",
+      "name": "S\u00e3o Paulo Distribution Center",
+      "location": {
+        "lat": -23.5505,
+        "lon": -46.6333
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0014",
+          "contents": "Machinery",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0032",
+          "contents": "Books",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0050",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0068",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0086",
+          "contents": "Timber Products",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0104",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0122",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0140",
+          "contents": "Clothing",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0158",
+          "contents": "Textiles",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0176",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0194",
+          "contents": "Machinery",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0212",
+          "contents": "Food Products",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0230",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0248",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0266",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0284",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0302",
+          "contents": "Toys",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0320",
+          "contents": "Clothing",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0338",
+          "contents": "Toys",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0356",
+          "contents": "Furniture",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0374",
+          "contents": "Timber Products",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0392",
+          "contents": "Machinery",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0410",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0428",
+          "contents": "Electronics",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0446",
+          "contents": "Textiles",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0464",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0482",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0500",
+          "contents": "Toys",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0518",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0536",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0554",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0572",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0590",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0608",
+          "contents": "Timber Products",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0626",
+          "contents": "Timber Products",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0644",
+          "contents": "Toys",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0662",
+          "contents": "Machinery",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0680",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0698",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0716",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0734",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0752",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0770",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0788",
+          "contents": "Electronics",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0806",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0824",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0842",
+          "contents": "Electronics",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0860",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0878",
+          "contents": "Clothing",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0896",
+          "contents": "Timber Products",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0914",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0932",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0950",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0968",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_miami"
+        },
+        {
+          "id": "s3_box_0986",
+          "contents": "Textiles",
+          "destination_hub": "hub_miami"
+        }
+      ]
+    },
+    {
+      "id": "hub_johannesburg",
+      "name": "Johannesburg Hub",
+      "location": {
+        "lat": -26.2041,
+        "lon": 28.0473
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0015",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0033",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0051",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0069",
+          "contents": "Furniture",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0087",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0105",
+          "contents": "Food Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0123",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0141",
+          "contents": "Timber Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0159",
+          "contents": "Food Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0177",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0195",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0213",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0231",
+          "contents": "Electronics",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0249",
+          "contents": "Textiles",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0267",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0285",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0303",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0321",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0339",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0357",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0375",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0393",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0411",
+          "contents": "Books",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0429",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0447",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0465",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0483",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0501",
+          "contents": "Clothing",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0519",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0537",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0555",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0573",
+          "contents": "Food Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0591",
+          "contents": "Furniture",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0609",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0627",
+          "contents": "Toys",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0645",
+          "contents": "Timber Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0663",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0681",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0699",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0717",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0735",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0753",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0771",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0789",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0807",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0825",
+          "contents": "Food Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0843",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0861",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0879",
+          "contents": "Toys",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0897",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0915",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0933",
+          "contents": "Machinery",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0951",
+          "contents": "Toys",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0969",
+          "contents": "Food Products",
+          "destination_hub": "hub_tokyo"
+        },
+        {
+          "id": "s3_box_0987",
+          "contents": "Furniture",
+          "destination_hub": "hub_tokyo"
+        }
+      ]
+    },
+    {
+      "id": "hub_nairobi",
+      "name": "Nairobi Distribution Center",
+      "location": {
+        "lat": -1.2921,
+        "lon": 36.8219
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0016",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0034",
+          "contents": "Food Products",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0052",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0070",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0088",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0106",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0124",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0142",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0160",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0178",
+          "contents": "Food Products",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0196",
+          "contents": "Food Products",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0214",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0232",
+          "contents": "Textiles",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0250",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0268",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0286",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0304",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0322",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0340",
+          "contents": "Furniture",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0358",
+          "contents": "Toys",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0376",
+          "contents": "Textiles",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0394",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0412",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0430",
+          "contents": "Textiles",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0448",
+          "contents": "Textiles",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0466",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0484",
+          "contents": "Electronics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0502",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0520",
+          "contents": "Timber Products",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0538",
+          "contents": "Electronics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0556",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0574",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0592",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0610",
+          "contents": "Books",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0628",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0646",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0664",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0682",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0700",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0718",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0736",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0754",
+          "contents": "Electronics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0772",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0790",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0808",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0826",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0844",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0862",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0880",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0898",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0916",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0934",
+          "contents": "Books",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0952",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0970",
+          "contents": "Machinery",
+          "destination_hub": "hub_la"
+        },
+        {
+          "id": "s3_box_0988",
+          "contents": "Clothing",
+          "destination_hub": "hub_la"
+        }
+      ]
+    },
+    {
+      "id": "hub_toronto",
+      "name": "Toronto Hub",
+      "location": {
+        "lat": 43.651,
+        "lon": -79.347
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0017",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0035",
+          "contents": "Machinery",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0053",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0071",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0089",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0107",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0125",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0143",
+          "contents": "Books",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0161",
+          "contents": "Timber Products",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0179",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0197",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0215",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0233",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0251",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0269",
+          "contents": "Machinery",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0287",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0305",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0323",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0341",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0359",
+          "contents": "Furniture",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0377",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0395",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0413",
+          "contents": "Timber Products",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0431",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0449",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0467",
+          "contents": "Timber Products",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0485",
+          "contents": "Electronics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0503",
+          "contents": "Toys",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0521",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0539",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0557",
+          "contents": "Electronics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0575",
+          "contents": "Clothing",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0593",
+          "contents": "Furniture",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0611",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0629",
+          "contents": "Food Products",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0647",
+          "contents": "Machinery",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0665",
+          "contents": "Furniture",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0683",
+          "contents": "Electronics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0701",
+          "contents": "Food Products",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0719",
+          "contents": "Food Products",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0737",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0755",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0773",
+          "contents": "Furniture",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0791",
+          "contents": "Toys",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0809",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0827",
+          "contents": "Furniture",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0845",
+          "contents": "Electronics",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0863",
+          "contents": "Machinery",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0881",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0899",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0917",
+          "contents": "Toys",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0935",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0953",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0971",
+          "contents": "Machinery",
+          "destination_hub": "hub_frankfurt"
+        },
+        {
+          "id": "s3_box_0989",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_frankfurt"
+        }
+      ]
+    },
+    {
+      "id": "hub_mexico_city",
+      "name": "Mexico City Distribution Center",
+      "location": {
+        "lat": 19.4326,
+        "lon": -99.1332
+      },
+      "boxes": [
+        {
+          "id": "s3_box_0018",
+          "contents": "Electronics",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0036",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0054",
+          "contents": "Food Products",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0072",
+          "contents": "Clothing",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0090",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0108",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0126",
+          "contents": "Electronics",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0144",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0162",
+          "contents": "Textiles",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0180",
+          "contents": "Machinery",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0198",
+          "contents": "Clothing",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0216",
+          "contents": "Electronics",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0234",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0252",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0270",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0288",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0306",
+          "contents": "Cosmetics",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0324",
+          "contents": "Toys",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0342",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0360",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0378",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0396",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0414",
+          "contents": "Pet Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0432",
+          "contents": "Industrial Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0450",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0468",
+          "contents": "Clothing",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0486",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0504",
+          "contents": "Medical Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0522",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0540",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0558",
+          "contents": "Pharmaceuticals",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0576",
+          "contents": "Furniture",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0594",
+          "contents": "Books",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0612",
+          "contents": "Electronics",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0630",
+          "contents": "Software Hardware",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0648",
+          "contents": "Timber Products",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0666",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0684",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0702",
+          "contents": "Textiles",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0720",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0738",
+          "contents": "Electronics",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0756",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0774",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0792",
+          "contents": "Timber Products",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0810",
+          "contents": "Clothing",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0828",
+          "contents": "Timber Products",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0846",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0864",
+          "contents": "Tropical Produce",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0882",
+          "contents": "Office Supplies",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0900",
+          "contents": "Timber Products",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0918",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0936",
+          "contents": "Auto Parts",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0954",
+          "contents": "Sporting Goods",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0972",
+          "contents": "Home Appliances",
+          "destination_hub": "hub_johannesburg"
+        },
+        {
+          "id": "s3_box_0990",
+          "contents": "Books",
+          "destination_hub": "hub_johannesburg"
+        }
+      ]
+    }
+  ]
+}
